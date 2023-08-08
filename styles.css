@@ -1,32 +1,83 @@
-/* Class for rounded corners and border */
-.rounded-border {
-  border: 5px solid grey;
-  border-radius: 10px;
-}
-
-/* Class for responsive width */
-.responsive-width {
-  width: 100%; /* Default for mobile */
-}
-
-@media screen and (min-width: 768px) {
-  .responsive-width {
-    width: 50%; /* 50% width for computer screens and larger */
-  }
-}
-
-/* Class for bigger text with comic font */
-.bigger-comic-font {
-  font-size: 24px;
-  font-family: "Comic Sans MS", cursive;
-}
-
-/* Center the entire body content */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+/* Reset default margins and paddings */
+body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.site-name {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Content styles */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.text {
+  width: 40%;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  margin-top: 10px;
+}
+
+/* Media query for narrow screens */
+@media screen and (max-width: 768px) {
+  .content {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .images {
+    margin-top: 20px;
+  }
 }
