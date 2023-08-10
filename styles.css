@@ -1,9 +1,35 @@
 /* Reset default margins and paddings */
-body, h1, h2, h3, p, ul, li {
+h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
 }
 
+body {
+            margin: 0 auto; /* Center the content horizontally */
+            width: 1000px; /* Set the fixed width */
+            background-color: #f0f0f0; /* Background color for illustration */
+            padding: 20px; /* Add some padding for better visibility */
+        }
+
+/* Style the anchor tag like a button */
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect */
+        .button-link:hover {
+            background-color: #2980b9;
+        }
+		
+		
 /* Header styles */
 header {
   display: flex;
